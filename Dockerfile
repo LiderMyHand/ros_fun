@@ -24,9 +24,9 @@ ENV USER ubuntu
 #from https://automaticaddison.com/how-to-install-and-launch-ros2-using-docker/
 RUN mkdir -p /home/ubuntu/catkin_ws/src
 WORKDIR /home/ubuntu/catkin_ws
-RUN git clone https://github.com/AWegierska/multirobot_nav.git /home/ubuntu/catkin_ws/src/multirobot_nav
-RUN git clone https://github.com/AWegierska/pkg_tsr.git /home/ubuntu/catkin_ws/src/pkg_tsr
-ADD ./jupyter_notebooks /home/ubuntu/catkin_ws/src/jupyter_notebooks
+#RUN git clone https://github.com/AWegierska/multirobot_nav.git /home/ubuntu/catkin_ws/src/multirobot_nav
+#RUN git clone https://github.com/AWegierska/pkg_tsr.git /home/ubuntu/catkin_ws/src/pkg_tsr
+#ADD ./jupyter_notebooks /home/ubuntu/catkin_ws/src/jupyter_notebooks
 ADD ./run_jupyter.sh /home/ubuntu/run_jupyter.sh
 COPY setup.bash /home/ubuntu/setup.bash
 RUN ["/bin/bash", "-c", "/home/ubuntu/setup.bash"]
