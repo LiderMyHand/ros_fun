@@ -1,0 +1,3 @@
+[submodule "pomiary_wizyjne_leap_motion"]
+	path = pomiary_wizyjne_leap_motion
+	url = git@github.com:LiderMyHand/pomiary_wizyjne_leap_motion.git

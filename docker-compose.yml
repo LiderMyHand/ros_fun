@@ -1,11 +1,12 @@
 version: "3"
 services:
     ros1:
-        image: adohaha/fun_ros:ros1
+        build: .
         volumes:
             - ./jupyter_notebooks:/home/ubuntu/catkin_ws/src/jupyter_notebooks
             - ./cwiczenia:/home/ubuntu/catkin_ws/src/cwiczenia
             - ../misp:/home/ubuntu/catkin_ws/src/misp
+            - ./pomiary_wizyjne_leap_motion:/home/ubuntu/catkin_ws/src/pomiary_wizyjne_leap_motion
         network_mode: "host"            
         shm_size: '2gb'
         container_name: ros_fun_1
