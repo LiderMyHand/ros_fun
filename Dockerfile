@@ -18,7 +18,7 @@ RUN apt-get --yes install ros-noetic-joy ros-noetic-teleop-twist-joy \
   ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro \
   ros-noetic-compressed-image-transport ros-noetic-rqt-image-view \
   ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers  \
-  ros-noetic-teb-local-planner
+  ros-noetic-teb-local-planner ros-noetic-rosbridge-suite
 #ADD ./jupyter_notebooks/rviz_nav.rviz /opt/ros/noetic/share/nav2_bringup/rviz/nav2_default_view.rviz
 ENV USER ubuntu
 #from https://automaticaddison.com/how-to-install-and-launch-ros2-using-docker/

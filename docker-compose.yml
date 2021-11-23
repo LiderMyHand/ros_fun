@@ -4,9 +4,9 @@ services:
         image: adohaha/fun_ros:ros1
         volumes:
             - ./jupyter_notebooks:/home/ubuntu/catkin_ws/src/jupyter_notebooks
-        ports: 
-            - 6080:80
-            - 8888:8888
+            - ./cwiczenia:/home/ubuntu/catkin_ws/src/cwiczenia
+            - ../misp:/home/ubuntu/catkin_ws/src/misp
+        network_mode: "host"            
         shm_size: '2gb'
         container_name: ros_fun_1
     
