@@ -36,4 +36,5 @@ RUN apt-get --yes install gedit
 RUN pip3 install widgetsnbextension
 RUN jupyter nbextension install --user --py widgetsnbextension
 RUN jupyter nbextension enable widgetsnbextension --user --py
+RUN apt-get install python3-pykdl --yes
 ADD ./jupyter_notebooks/Jupyter.desktop /home/ubuntu/Desktop/Jupyter.desktop
