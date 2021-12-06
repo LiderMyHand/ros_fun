@@ -1,0 +1,12 @@
+version: "3"
+services:
+    ros1:
+        image: adohaha/fun_ros:leapmotion
+        volumes:
+            - ./pomiary_wizyjne_leap_motion:/home/ubuntu/catkin_ws/src/pomiary_wizyjne_leap_motion    
+        ports:
+            - 9090:9090 
+            - 6080:80
+            - 8888:8888
+        shm_size: '2gb'
+        container_name: ros_fun_1
